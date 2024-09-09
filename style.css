@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    /* height: 100vh; */
+}
+.login{
+    width: 50%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    animation: slideIn 0.5s forwards;
+    opacity: 0;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.header{
+    display: flex;
+}
+.enrollbtn{
+    border: 1px solid lightgreen;
+    border-radius: 20px; 
+}
+.enrollmenu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    left: 0;
+    top: 40px;
+}
+.tick{
+    padding: 5px 10px;
+    display: flex;
+}
+form{
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+form h1,p{
+text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgreen;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.info:hover{
+    border: 1px solid green;
+}
+.info input{
+    border: none;
+}
+.box{
+    display: flex;
+}
+.btn{
+    border: none;
+    border-radius: 30px;
+    padding: 8px 0px;
+    width: 100%;
+    background-color: gray;
+    color: white;
+}
+.forgot{
+    display: flex;
+    color: green;
+    justify-content: space-around;
+    font-size: 14px;
+}
+footer{
+    font-size: 12px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer span{
+    color: green;
+}
+.image{
+    width: 50%;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
